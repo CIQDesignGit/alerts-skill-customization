@@ -1,0 +1,11 @@
+---
+description: CommerceIQ prototype UI and design-system rules
+alwaysApply: true
+---
+
+Follow `instructions.md` in the repo root for all UI work:
+
+- Prefer `@ciq-dev/ciq-design-system` components over ad-hoc or raw shadcn.
+- Lucide icons only; slate neutrals; no zinc; no hex in components.
+- Tailwind 4 + CIQ tokens (`fg-*`, `canvas`, `brand-*`, `type-*` utilities).
+- Read `product-context.md` for product scope and vocabulary before building flows.
