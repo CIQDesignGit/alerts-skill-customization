@@ -56,7 +56,7 @@ const groups: { title: string; items: NavItem[] }[] = [
   { title: "Supply Chain", items: [{ label: "Profit Recovery Overview", icon: FileSearch }] },
 ];
 
-const footer: NavItem[] = [
+const utilityNav: NavItem[] = [
   { label: "Tools and Settings", icon: Wrench },
   { label: "Chrome Plugin", icon: Puzzle },
 ];
@@ -145,12 +145,12 @@ export function OldSidebar() {
             ))}
           </div>
         ))}
-      </nav>
-
-      <div className="border-t border-slate-600 py-2">
-        {footer.map((item) => (
+        {utilityNav.map((item) => (
           <NavRow key={item.label} item={item} />
         ))}
+      </nav>
+
+      <div className="shrink-0 border-t border-slate-600 py-2">
         <ExperienceToggle experience="old" className="px-4" />
       </div>
     </aside>

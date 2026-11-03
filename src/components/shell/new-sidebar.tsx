@@ -113,7 +113,7 @@ function NavMenuItem({ item }: { item: NavItem }) {
 function NavGroup({ items }: { items: NavItem[] }) {
   return (
     <SidebarGroupContent>
-      <SidebarMenu className="[&_[data-sidebar=menu-button]]:pr-0">
+      <SidebarMenu>
         {items.map((item) => (
           <NavMenuItem key={item.label} item={item} />
         ))}
@@ -227,7 +227,7 @@ export function NewSidebar() {
           "[&_a]:pointer-events-auto [&_button]:pointer-events-auto [&_label]:pointer-events-auto",
         )}
       >
-        <SidebarGroup className={cn("p-0 py-1", sidebarInsetX)}>
+        <SidebarGroup className={cn("p-0 pb-1 pt-3", sidebarInsetX)}>
           <NavGroup items={primary} />
         </SidebarGroup>
 

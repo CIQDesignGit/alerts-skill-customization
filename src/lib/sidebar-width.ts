@@ -1,8 +1,5 @@
-/** @ciq-dev/ciq-design-system default expanded width. */
-export const CIQ_SIDEBAR_DEFAULT_WIDTH_PX = 380;
-
-/** Open sidebar width: 20% narrower than the design-system default. */
-export const NEW_SIDEBAR_WIDTH_PX = Math.round(CIQ_SIDEBAR_DEFAULT_WIDTH_PX * 0.8);
+/** Open sidebar width: compact prototype rail (256px / `w-64`, below DS default 380px). */
+export const NEW_SIDEBAR_WIDTH_PX = 256;
 
 export const NEW_SIDEBAR_WIDTH = `${NEW_SIDEBAR_WIDTH_PX}px`;
 
